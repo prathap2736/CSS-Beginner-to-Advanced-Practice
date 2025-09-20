@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.overall{
+    /* height: 670px; */
+    display: grid;
+    grid-template-areas: 'cl1 cl2 cl3 cl4' 
+    'cl5 cl6 cl6 cl7'
+    'cl5 cl8 cl9 cl7';
+    padding: 10px;
+    background-color:yellow;
+}
+.box{
+    min-height:200px;
+    /* min-width:300px;  */
+    
+}
+.div1{
+    background-color: aqua;
+    grid-area: cl1;
+    padding: 10px;
+}
+.div2{
+    background-color: blanchedalmond;
+    grid-area: cl2;
+    /* display: flex; */
+    align-content: center;
+    text-align: center;
+}
+.div3{
+    background-color: blueviolet;
+    grid-area: cl3;
+    /* display: flex; */
+    align-content: center;
+    text-align: center;
+}
+.div4{
+    background-color: cadetblue;
+    grid-area: cl4;
+    /* display: flex; */
+    align-content: center;
+    text-align: center;
+}
+.div5{
+    background-color: darkred;
+    grid-area: cl5;
+    padding: 20px;
+    /* display: flex; */
+    align-content: center;
+    text-align: center;
+}
+.div6{
+    background-color: lightgreen;
+    grid-area: cl6;
+    padding:10px;
+}
+.div7{
+    background-color: chocolate;
+    grid-area: cl7;
+    padding: 10px;
+/* display: flex; */
+    align-content: center;
+    text-align: center;
+}
+.div8{
+    background-color: cornflowerblue;
+    grid-area: cl8;
+    padding: 10px;
+}
+.div9{
+    background-color: lightcoral;
+    grid-area: cl9;
+    padding: 10px;
+}
+p{
+    margin-top: 10px;
+}
+
+@media only screen and (min-width:300px) and (max-width:600px){
+    .overall{
+        grid-template-areas: 'cl1' 'cl2' 'cl3' 'cl4' 'cl5' 'cl6' 'cl7' 'cl8' 'cl9';
+    }
+    .box{
+        /* min-height:unset; */
+        text-align: center;
+        align-content: center;
+    }
+}

@@ -1,0 +1,68 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); */
+* {
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* justify-content: center;
+    align-items: center; */
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    gap: 20px 40px;
+    padding: 10px;
+}
+.first{
+    min-height:200px;
+    /* width:200px; */
+    border:1px solid black;
+    display: grid;
+    justify-content:center;
+    align-items: center;
+    /* margin-top:10px; */
+    border-radius: 5px;
+}
+body{
+    font-family:cursive;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+     font-weight: weight;
+     font-style: normal;
+} 
+.f1{
+    background-color: aqua;
+}
+.f2{
+    background-color: yellow;
+}
+.f3{
+    background-color:lightgreen;
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+.f4{
+    background-color: lightcoral;
+}
+.f5{
+    background-color:gray;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.f6{
+    background-color: pink;
+}
+.f7{
+    background-color: salmon;
+}
+.f8{
+    background-color: lawngreen;
+}
+.f9{
+    background-color: blue;
+}
+.f10{
+    background-color:red;
+}

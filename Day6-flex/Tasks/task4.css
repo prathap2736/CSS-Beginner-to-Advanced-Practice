@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin:0px
+    }
+
+h2{ 
+    background-color: lightblue;
+    padding:20px;
+    }
+
+.box{
+    height:600px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    }
+
+img{
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    margin-right:50px;
+    }
+
+.box1{
+    height:130px;
+    width:450px;
+    background-color: lightcoral;
+    border-radius: 0px 20px 30px 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 78px;
+    }
+
+.box h4{
+    margin-bottom:10px;
+    }

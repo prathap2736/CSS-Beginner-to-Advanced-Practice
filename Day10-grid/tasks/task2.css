@@ -1,0 +1,151 @@
+* {
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+.overall{
+    min-height:330px;
+    width:20%;
+    background-color:white;
+    border-radius:5px;
+}
+.first{
+    height:60%;
+    border-bottom:1px solid black;
+    text-align:center;
+    padding:10px;
+   
+}
+div>img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:10px solid grey;
+}
+.second{
+    padding:20px 0px  0px 10px;
+}
+div>p{
+    margin:0px 0px 10px 0px;
+}
+.overall2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:640px;
+    background-color:lightblue;
+}
+.second1{
+    height:230px;
+    width:100%;
+    background-color: white;
+    padding:10px 13px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+table, td{
+    border:1px solid black;
+    border-collapse:collapse;
+    padding:3px 10px;
+    margin-top:20px;
+    
+}
+table{
+    width:100%;
+}
+.row{
+    width:40%;
+}
+.size{
+    font-size:20px;
+    width:2%;
+    text-align:center;
+}
+.third{
+    height:120px;
+    width:100%;
+    background-color: white;
+    padding:10px 13px; 
+    border-radius:10px;
+}
+.third>p{
+    margin-top:10px;
+}
+.two{
+    margin-left:20px;
+    /* background-color:red; */
+    height: 330px;
+    width:50%
+}
+
+/* ------------------------ MEDIA QUERY ----------------------- */
+
+@media only screen and (min-width:602px) and (max-width:800px){
+    .overall2{
+        flex-direction: column;
+        min-height: unset;
+        padding:15px;
+        gap: 10px;
+    }
+    .overall{
+        min-height: unset;
+        width:100%;
+        display:flex;
+    }
+    .first{
+        border:0px;
+        border-right:1px solid black;
+        width:40%;
+    }
+    .second {
+        padding: 27px 0px 0px 22px;
+        width: 60%;
+    }
+    div>p {
+        margin: 0px 0px 29px 0px;
+    }
+    .two {
+        /* background-color: red; */
+        height: unset;
+        width: 100%;
+        margin:0px;
+    }
+}
+
+
+/* ---------------------- MOBILE ------------------------------ */
+
+@media only screen and (min-width:300px) and (max-width:601px){
+    .overall2{
+        flex-direction: column;
+        min-height: unset;
+        padding:15px;
+        gap: 10px;
+    }
+    .overall{
+        min-height: unset;
+        width:100%;
+    }
+    .first{
+        border:0px;
+        border-bottom:1px solid black;
+        width:100%;
+        height:unset;
+    }
+    .second {
+        padding: 27px 0px 0px 22px;
+        width: 100%;
+    }
+    div>p {
+        margin: 0px 0px 15px 0px;
+    }
+    .two {
+        /* background-color: red; */
+        height: unset;
+        width: 100%;
+        margin:0px;
+    }
+    .third{
+        height: unset;
+    }
+}

@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    background-image: linear-gradient(to right top, rgb(13, 12, 14), rgb(42, 29, 224));
+    height: 100vh;
+    padding: 20px;
+}
+.box{
+    width: 100%;
+    background-image: linear-gradient(to right top, lightgreen, orange);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 10px 20px;
+    border-radius: 10px;
+}
+label{
+    display: none;
+}
+i{
+    padding: 10px;
+}
+a{
+    margin-right: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+}
+a:hover{
+    z-index: 1;
+    color:aliceblue
+}
+.buttons{
+    margin-top: 5px;
+    transition: all 1s;
+}
+
+.buttons a::before{
+    content: "";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    bottom:0;
+    background-color: black;
+    transition: all 1s;
+    z-index: -1;
+    
+}
+.buttons a::after{
+    content:"";
+    height: 0%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(221, 17, 17);
+    transition: all 1s;
+    z-index: -1;
+}
+a:hover::after{
+    height: 50%;
+    cursor: pointer;
+}
+
+a:hover::before{
+    height: 50%;
+    cursor: pointer;
+}
+input:checked~.buttons{
+    background-image: linear-gradient(to right, green, #000000);
+    left:19px;
+}
+input{
+    display: none;
+}
+
+/* span::before{
+    content:"";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(248, 9, 9);
+    transition: all 1s;
+}
+span:hover::before{
+    width: 50%;
+}
+
+.h::after{
+    content:"";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(247, 10, 10);
+    transition: all 1s;
+}
+.h:hover::after{
+    width: 50%;
+} */
+
+@media only screen and (min-width:300px) and (max-width:800px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top:73px;
+        left:-120%;
+        height:86vh;
+        width:95%;
+        justify-content: center;
+        align-items:center;
+        gap: 50px;
+        background-color: rgb(138, 185, 187);
+        border-radius: 10px;
+    }
+    a{
+        color:white;
+        font-size: 40px;
+    }
+    label{
+        display: block;
+    }
+}

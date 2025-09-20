@@ -1,0 +1,39 @@
+* {
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+div>div{
+    height:200px ;
+    width:200px;
+    /* background-color:lightblue; */
+    border:2px solid black;
+}
+.second{
+    background-color:red;
+    
+}
+.third{
+    background-color:yellow;
+}
+.four{
+    background-color:lightgreen;
+}
+div h1{
+    font-size:60px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;  
+    align-items:center; 
+    height:640px;
+    flex-direction:row;
+    gap:20px;
+
+}
+.first{
+    display: flex;
+    justify-content: center;
+    /* align-self: flex-start; */
+    
+}

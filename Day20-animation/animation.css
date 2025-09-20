@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+:root{
+    --fcolor: blueviolet;
+    --shadow: 0px 3px 10px 0px rgb(6, 241, 104);
+}
+.box {
+    min-height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding:30px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: blueviolet; */
+    /* position: relative; */
+    /* animation-name: dhanu;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    animation-delay: 3s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both; */
+}
+
+.box1 {
+    background-color: var(--fcolor);
+    box-shadow: var(--shadow);
+    /* color: var(--fcolor); */
+}
+
+.box1>h1 {
+    /* font-size: 60px; */
+    color: red
+}
+
+.box1>p {
+    color: yellow;
+    margin: 30px 0px;
+}
+
+.box1>button {
+    background-color: blue;
+    border: none;
+    padding: 5px;
+    color: white;
+}
+
+.box2 {
+    background-color: brown;
+}
+
+.box2>h1 {
+    /* color: green; */
+    color: rgb(55, 212, 16);
+}
+
+.box2>p {
+    /* color: darkgoldenrod; */
+    color: rgb(189, 20, 138);
+    margin: 30px 0px;
+}
+
+.box2>button {
+    background-color: blueviolet;
+    border: none;
+    padding: 5px;
+    color: white;
+}
+
+/* @keyframes dhanu {
+    0%{
+        background-color: red; left: 0px;top:0px;
+    }
+    25%{
+        background-color: rgb(119, 0, 255); left: 200px; top:0px;
+    }
+    50%{
+        background-color: rgb(0, 255, 242); left: 200px; top:200px;
+    }
+    75%{
+        background-color: rgb(0, 255, 21); left: 0px; top:200px;
+    }
+    100%{
+        background-color: rgb(255, 187, 0); left: 0px; top:0px;
+    }
+} */

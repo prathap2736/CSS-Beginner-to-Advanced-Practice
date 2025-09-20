@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wholeconatiner {
+    background-image: linear-gradient(to top right, rgb(23 28 197), #26a52a);
+    min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 50px;
+    text-align: center;
+    color: blueviolet;
+    margin: -30px 0px 30px 0px;
+}
+
+.conatiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.box {
+    width: 350px;
+    height: 300px;
+    background-color: #D4D8DD;
+    border-radius: 10px;
+    color: blueviolet
+}
+
+.upboxContent {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background-color: #f17fff;
+    padding: 15px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.circles {
+    display: flex;
+    gap: 10px;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.downcontent {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    color: black
+}
+
+.number {
+    position: relative;
+    top: 80px;
+    left: 90px;
+    font-size: 50px;
+    color: #9da526;
+
+}
+
+.c1 {
+
+    transition: background-color, 0.1s;
+}
+
+.c2 {
+
+    transition: background-color 0.1s 1s;
+
+}
+
+.c3 {
+
+    transition: background-color 0.1s 2s;
+}
+
+.box:hover .c1 {
+    background-color: rgb(57, 29, 214);
+}
+
+.box:hover .c2 {
+    background-color: rgb(196, 38, 135);
+}
+
+.box:hover .c3 {
+    background-color: rgb(252, 5, 58);
+}
+
+@media only screen and (min-width:340px) and (max-width:1000px) {
+
+    .conatiner {
+
+        align-items: center;
+        padding: 20px
+    }
+    .wholeconatiner {
+        background-image: linear-gradient(to top right, rgb(219, 9, 156), #c2ec04);
+    }
+
+    .font {
+        font-size: 26px
+    }
+
+    .number {
+        font-size: 30px;
+    }
+    .name{
+        margin: 15px 0px 20px 0px;
+    }
+}

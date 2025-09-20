@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, violet, green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    position: relative;
+
+}
+
+.logo {
+    color: rgb(29, 27, 27);
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 1s;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 0.5s;
+
+}
+
+a:hover {
+    color: white;
+    background-color: black;
+
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+}
+
+.content {
+    padding: 40px 20px;
+    margin: auto;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translatex(-100%);
+    animation: fadeSlideIn 0.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translatex(-100%);
+    animation: fadeSlideIn 0.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeSlideIn {
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+
+.contentTwo {
+    padding: 40px 20px;
+    margin: auto;
+}
+
+.contentTwo h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translatex(100%);
+    animation: fadeSlideIn 0.5s ease-out forwards;
+    animation-delay: 2s;
+}
+
+.contentTwo p {
+    font-size: 18px;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translatex(100%);
+    animation: fadeSlideIn 0.5s ease-out forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .subMenu,
+    .nav-links {
+        display: none;
+        opacity: 0;
+    }
+}

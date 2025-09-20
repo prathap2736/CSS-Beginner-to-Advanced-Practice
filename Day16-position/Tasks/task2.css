@@ -1,0 +1,179 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: linear-gradient(201deg, black, transparent);
+    height: 100vh;
+}
+
+.left {
+    height: 600px;
+    width: 370px;
+    display: flex;
+    position: relative;
+}
+
+.first {
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+.arrow{
+    filter: brightness(70%);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    padding: 10px;
+    width:100%;
+    font-size: 10px;
+}
+
+.content>div {
+    display: flex;
+}
+
+.namebox {
+    display: flex;
+    position: absolute;
+    bottom: 150px;
+    margin: 0px 0px 0px 50px;
+    color: white;
+}
+
+.dot {
+    margin: -4px 5px 0px 4px;
+}
+.fa-wifi{
+    margin: 0px 0px 0px 10px;
+}
+
+.arrow {
+    font-size: 35px;
+    margin: 8px;
+    padding-left: 30px;
+}
+.namebox>div>h2{
+    margin: 0px 0px 10px 0px;
+}
+
+.right {
+    height: 600px;
+    width: 370px;
+    background-color: white;
+    padding: 10px;
+
+}
+
+.right>div {
+    padding: 20px 20px 20px 35px;
+}
+
+.male {
+    text-align: end;
+    font-size: 20px;
+    margin:  -21px -22px 0px 0px;
+}
+
+.second {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 36px 0px 0px 0px;
+}
+
+.nam {
+    padding: 10px 0px 10px 0px;
+}
+
+.bot1 {
+    padding: 10px 0px 10px 0px;
+}
+
+.follow {
+    display: flex;
+    gap: 40px;
+    font-size: 22px;
+}
+
+button {
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(45deg, #9C27B0, transparent);
+    border: none;
+    color: white;
+    margin: 70px 0px 0px 0px;
+}
+
+/* ------------------------- MEDIA QUERY ------------------------------ */
+
+/* ------------------------ MOBILE VIEW ------------------------------------- */
+
+@media only screen and (min-width:320px) and (max-width:600px) {
+    .container {
+        flex-direction: column;
+        height: unset;
+        padding: 20px;
+        background-image: linear-gradient(to left top, #0acce6, #a00741);
+    }
+    
+    .left {
+        height: unset;
+        width: 100%;
+        
+    } 
+    .right{
+        width: 100%;
+        height: unset;
+    }
+
+    /* .dot {
+        margin: -10px 4px 0px 4px;
+    } */
+}
+
+/* ------------------------------- TABLET VIEW -------------------------------------- */
+
+@media only screen and (min-width:600px) and (max-width:800px) {
+    .left {
+        width: 100%;
+        height: unset;
+    
+    }
+    .container {
+        flex-direction: column;
+        height: unset;
+        padding: 20px;
+        background-image: linear-gradient(to left top, #222699, #2aa72e);
+    }
+
+    .right {
+        height: unset;
+        width: 100%;
+        padding:15px;
+    }
+
+    .follow {
+        font-size: 30px;
+    }
+    .namebox {
+        bottom: 100px;
+    }
+    .content {
+        font-size: 15px;
+        
+    }
+}

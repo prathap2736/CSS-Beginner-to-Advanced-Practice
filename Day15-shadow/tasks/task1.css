@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    background-image: linear-gradient(to top left, black, blue);
+    min-height: 640px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    min-height: 364px;
+    width: 481px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(204, 64, 64, 0.2), 0 6px 20px rgba(196, 35, 35, 0.19);
+}
+.first>h2{
+    margin-bottom: 10px;
+}
+.first>.firstform, .first>.secondform, .first>.thirdform{
+    display: flex;
+    justify-content: space-between;
+}
+.in{
+    width:100%;
+    padding: 5px;
+    margin: 5px 0px 10px 0px; 
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+span{
+    text-decoration: underline 2px red;
+}
+.radios{
+    margin: 15px 0px 30px 0px;
+    display: flex;
+}
+.radio2, .radio3{
+    margin-left: 60px;
+}
+button{
+    width: 100%;
+    border: none;
+    padding: 7px 0px;
+    background-image: linear-gradient(to top right, blue, green);
+    color: white;
+    border-radius: 4px;
+}
+
+/* -------------------------------MEDIA QUERY-------------------------------------- */
+
+/* ------------------------- MOBILE VIEW ------------------------------ */
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .container{
+        background-image: linear-gradient(to top right,rgb(50, 170, 50), rgb(15, 15, 233));
+        min-height: unset;
+        align-items: unset;
+        padding: 10px
+    }
+    .first{
+        min-height: 364px;
+        width: 90%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(204, 64, 64, 0.2), 0 6px 20px rgba(196, 35, 35, 0.19);
+    }
+    .first>.firstform, .first>.secondform, .first>.thirdform{
+        justify-content: unset;
+        flex-direction: column;
+    }
+    .radios{
+    flex-direction: column;
+    }
+    .radio2, .radio3{
+        margin: 7px 0px 0px 0px;
+    }
+    button{
+        background-image: linear-gradient(to bottom left, rgb(255, 115, 0), rgb(20, 102, 20)); 
+    }
+
+}
+
+/* --------------------- TABLET VIEW --------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .container{
+        background-image: linear-gradient(to top right,rgb(92, 50, 170), rgb(154, 199, 49));
+        min-height: unset;
+        align-items: unset;
+        padding: 10px
+    }
+    .first{
+        width: 500px;    
+    }
+}

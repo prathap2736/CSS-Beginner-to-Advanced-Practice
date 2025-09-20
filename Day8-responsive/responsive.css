@@ -1,0 +1,41 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+.first{
+    background-color:blue;
+    height:250px;
+    width:250px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin:10px;
+}
+
+
+/* ------------- media query ------------ */
+/* --------mobile--------- */
+@media only screen and (min-width:300px) and (max-width:600px){
+    .first{
+        background-color:red;
+    }
+}
+/* -----------tab-------------- */
+@media only screen and (min-width:600px) and (max-width:800px){
+    .first{
+        background-color:yellow;
+    }
+}
+/* -----------laptop-------------- */
+@media only screen and (min-width:800px) and (max-width:1500px){
+    .first{
+        background-color:blueviolet;
+    }
+}
+/* -----------desktop-------------- */
+@media only screen and (min-width:1500px){
+    .first{
+        background-color:green;
+    }
+}

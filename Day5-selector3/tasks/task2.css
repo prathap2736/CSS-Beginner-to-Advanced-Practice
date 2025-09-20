@@ -1,0 +1,53 @@
+* {
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+.first{
+    background-image:url("./keyboard.jpeg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height:640px;
+    padding:30px;
+}
+.second{
+    height:200px;
+    width:45%;
+    /* background-color:lightgreen; */
+    float:left;
+    color:white;
+}
+.lorem{
+    margin-left:20px;
+}
+.icon{
+    font-size:40px;
+    color:blue;
+}
+.alex{
+    margin-top:30px;
+    color:yellow;
+}
+.third{
+    float:left;
+    margin:0px 0px 0px 20px;
+}
+.four{
+    margin:0px 0px 0px 0px;
+    float:left;
+}
+ .five{
+    margin:0px 0px 0px 20px;
+ }
+.overall{
+    width:100%;
+    height:500px;
+    /* background-color:red; */
+    margin:auto;
+    padding:0px 0px 0px 100px;
+    /* padding-top:50px; */
+}
+.space{
+    margin-left:40px;
+}

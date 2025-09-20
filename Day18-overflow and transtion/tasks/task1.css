@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    min-height: 320px;
+    width: 400px;
+    background-color: blueviolet;
+    padding: 10px;
+    /* position: relative; */
+}
+
+input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 2px;
+
+}
+
+.fa-solid {
+    position: relative;
+    left: 92%;
+    bottom: 36px;
+    z-index: 999;
+    font-size: 22px;
+
+}
+
+/* -------------------------------- MEDIA QUERY ------------------------------ */
+
+/* ------------------------------- MOBILE ------------------------------- */
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .fa-solid{
+        
+        font-size: 20px;
+        left: 92%;
+        bottom:34px;
+    }
+    .container{
+        padding: 20px;
+    }
+}

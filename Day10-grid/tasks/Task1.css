@@ -1,0 +1,186 @@
+* {
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+.first{
+    height: 530px;
+    width:50%;
+    background-color: lightcoral;
+    padding: 30px;
+    border-radius:5px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 640px;
+    gap: 20px;
+    background-color: lightblue;
+}
+.in{
+    width:100%;
+    padding: 10px;
+    outline:none;
+    border:none;
+    border-radius: 3px;
+    margin-top:5px;
+    border:1px solid black;
+}
+textarea{
+    height:215px;
+}
+.f1{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin:15px 0px;
+}
+.f1 .in{
+    padding : 10px 120px 10px 5px;
+}
+.f2{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    margin:15px 0px;
+}
+.f2 .in{
+    padding : 10px 120px 10px 5px;
+}
+.btn{
+    border: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: blue;
+    color: white;
+    margin-top:10px;
+}
+.third{
+    height:250px;
+    width:100%;
+    background-color:grey;
+    padding:20px;
+    margin-bottom:10px;
+}
+.frame{
+    min-height:530px;
+    width:25%;
+    /* background-color:red; */
+}
+.location{
+    display: flex;
+    margin:10px 0px;
+    /* justify-content: space-between; */
+}
+.mail{
+    display: flex;
+    margin:10px 0px;
+    /* justify-content: space-between; */
+}
+.phone{
+    display: flex;
+    margin:10px 0px;
+    /* justify-content: space-between; */
+}
+.graph{
+    margin:5px 0px 5px 5px;
+}
+.ph{
+    background-color:lightblue;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    padding:6px;
+    font-size:18px; 
+}
+.icons{
+    margin:30px 0px 0px 0px;
+}
+.icon{
+    font-size:25px;
+    margin-left:10px;
+}
+.map{
+    width:342px;
+    height:260px;
+}
+
+
+/* ---------------------  MEDIA QUERY  -------------------------- */
+
+/* ---------------------- TAB ----------------------- */
+
+@media only screen and (min-width:600px) and (max-width:800px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: unset;
+        gap: 10px;
+        padding:10px;
+    }
+    .first{
+        height: unset;
+        width:100%;
+        padding: 20px;
+    }
+    .f2 .in{
+        padding : 10px 82px 10px 5px;
+    }
+    .f1 .in{
+        padding : 10px 82px 10px 5px;
+    }
+    .frame{
+        /* min-height: unset; */
+        width:100%;
+    }
+    .map{
+        height: 260px;
+        width:100%;
+    }
+}
+
+/* ---------------------- MOBILE ----------------------- */
+@media only screen and (min-width:320px) and (max-width:600px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: unset;
+        gap: 10px;
+        padding:10px;
+    }
+    .first{
+        height: unset;
+        width:100%;
+        padding: 5px;
+    }
+    .f2 .in{
+        padding : 10px 50px 10px 5px;
+    }
+    .f1 .in{
+        padding : 10px 82px 10px 5px;
+    }
+    .frame{
+        /* min-height: unset; */
+        width:100%;
+    }
+    .map{
+        height: 260px;
+        width:100%;
+    }
+    .f1{
+        flex-direction: column;
+        width:100%;
+    }
+    .f2{
+        flex-direction: column;
+        width:100%;
+    }
+    .in{
+        margin: 10px 0px;
+    }
+    
+}

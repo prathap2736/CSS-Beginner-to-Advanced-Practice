@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:640px;
+    background-color: blueviolet;
+}
+.first{
+    height: 460px;
+    width: 800px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.leftcontent{
+    height:400px;
+    width: 340px;
+    /* background-color: red; */
+    padding:10px;
+}
+.rightcontent{
+    height:400px;
+    width: 340px;
+    /* background-color: red; */
+    padding:10px;
+}
+.rightcontent>div>div>p{
+    margin-top: 15px;
+}
+.r1, .r2, .r3{
+    display: flex;
+}
+.r2{
+    margin: 30px 0px;
+}
+i{
+    font-size: 50px;
+    color: red;
+    margin: 0px 15px 0px 0px;
+}
+.in{
+    width: 100%;
+    padding:  10px;
+    border: none;
+    border-bottom:1px solid black;
+    outline: none;
+    margin: 3px 0px 10px 0px;
+    /* border-radius:7px; */
+}
+.our{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+textarea{
+    height: 150px;
+}
+span{
+    color:blue;
+}
+
+/* -----------------MEDIA QUERY------------------- */
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .container{
+        height: unset;
+        padding: 10px;
+    }
+    .first{
+        height:  unset;
+        width: 100%;
+        padding: 10px;
+    }
+    .leftcontent{
+        height: unset;
+        width: 100%;
+    }
+    .rightcontent{
+        height: unset;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .container{
+        height: unset;
+        padding: 30px;
+    }
+    .first{
+        height:  unset;
+        width: 90%;
+        padding: 10px;
+    }
+    .leftcontent{
+        height: unset;
+        width: 50%;
+    }
+    .rightcontent{
+        height: unset;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    .container{
+        height: unset;
+        padding: 30px;
+    }
+    .first{
+        height:  unset;
+        width: 95%;
+        padding: 10px;
+    }
+    .leftcontent{
+        height: unset;
+        width: 50%;
+    }
+    .rightcontent{
+        height: unset;
+        width: 50%;
+    }
+}
+

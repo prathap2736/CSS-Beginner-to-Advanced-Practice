@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to top right, lightgreen,lightblue);
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: burlywood;
+    box-shadow: 10px 21px 23px -9px black;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-direction: both; */
+    animation-timing-function: ease-in-out;
+}
+@keyframes ball {
+    0%{
+        transform: translateY(0) scale(1);
+    }
+    50%{
+        transform: translateY(0) scale(1.4);
+    }
+    100%{
+        transform: translateY(0) scale(1);
+    }
+}

@@ -1,0 +1,61 @@
+* {
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+.first{
+    min-height:640px;       /*-----height use panna always min-height tha podanum------height eduka height: unset kudukanum-----*/
+    width:100%;
+    background-color:lightblue;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+}
+.second{
+    height:450px;
+    width:280px;
+    background-color:lightgreen;
+    text-align: center;
+    padding:20px
+}
+.second>img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+.second>p{
+    margin:20px 0px;
+}
+.icons>i{
+    font-size:30px;
+    padding:0px 10px;
+}
+
+/* -----------media query--------------- */
+/* @media only screen and (min-width: 600px) and (max-width:870px) {
+    .container {
+        flex-direction: column;
+    }
+    .container>div {
+        width: 90%;
+        flex-direction: row;    
+        align-items: center;
+        min-height: unset;
+    }
+    .rightSide {
+        background-color: aqua;
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .container>div {
+        width: 90%;
+        min-height: unset;
+        padding: 10px;
+    }
+} */

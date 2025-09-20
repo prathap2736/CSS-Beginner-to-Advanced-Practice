@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px
+}
+.box{
+    width: 450px;
+    height: 250px;
+    background-color: aqua;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    line-height: 20px;
+    overflow-y: auto;
+}
+.box1{
+    width:  100%;
+    padding: 20px;
+    background-color: red;
+}
+.box2{
+    background-color: green;
+}
+.container{
+    display: flex;
+}

@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    background-image: linear-gradient(to right top, rgb(13, 12, 14), rgb(42, 29, 224));
+    height: 100vh;
+    padding: 20px;
+}
+
+.box {
+    width: 100%;
+    background-image: linear-gradient(to right top, rgb(144, 200, 238), rgb(0, 255, 106));
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 10px 20px;
+    border-radius: 10px;
+}
+
+a {
+    margin-right: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 1s;
+    /* color: white; */
+    /* position: relative; */
+}
+
+.buttons {
+    margin-top: 7px;
+    transform: translateY(100%);
+    animation: slideIn 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.box>h1 {
+    transform: translateY(-100%);
+    animation: slideout 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.buttons>a:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.contentone {
+    transform: translateX(-100%);
+    animation: contone 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    color: white;
+    margin: 30px 0px;
+}
+
+.contenttwo {
+    transform: translateX(200%);
+    animation: conttwo 1s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    color: white;
+    /* margin: 30px; */
+
+}
+
+input:checked~.buttons {
+    background-image: linear-gradient(to right, rgb(238, 53, 176), lightblue);
+    left: 19px;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+i {
+    padding: 10px;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes slideout {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes contone {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes conttwo {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+/* -------------------- RESPONSIVE CODE ------------------ */
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top:73px;
+        left:-120%;
+        height:86vh;
+        width:94%;
+        justify-content: center;
+        align-items:center;
+        gap: 50px;
+        background-color: rgb(138, 185, 187);
+        border-radius: 10px;
+    }
+    a{
+        color:white;
+        font-size: 40px;
+    }
+    label{
+        display: block;
+    }
+    .container{
+        height: unset;
+    }
+}

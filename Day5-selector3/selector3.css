@@ -1,0 +1,46 @@
+/* .in:focus{
+            background-color:red;
+}
+a:link{
+    color: #FF0000;
+}
+a:visited{
+    color: #00FF00;
+}
+a:hover{
+    color: #FF00FF;
+}
+a:active{
+    color: #0000FF;
+} */
+/* .box p{
+    color: blue;
+}
+.box p+p{             one of the method particular particular ah color panna use aguthu.
+    color: red;
+}
+.box p+p+p{
+    color: green;
+} */
+/* .box p:first-child{
+    color: green;
+}
+.box p:nth-child(2){      one of the method particular particular ah color panna use aguthu.
+    color: red;
+}
+.box p:last-child{
+    color: blue;
+} */
+p::first-line{
+    color:blue;
+}
+p::first-letter{
+    font-size:50px;
+    color:red;
+}
+p::before{
+    content: "#";
+}
+P::after{
+    content: "#";
+}

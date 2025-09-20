@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    display: grid;
+    grid-template-areas: 'first second second second'
+    'third third third third' ' third third third third' 'four four five five' 'four four six six' 'seven seven seven seven';
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.box{
+    /* min-height: 200px; */
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
+.box1{
+    background-color: rgb(141, 141, 236);
+    grid-area: first;
+}
+.box2{
+    background-color:darkslategray;
+    grid-area: second;
+    
+}
+.box3{
+    background-color:green;
+    grid-area: third;
+    min-height: 300px;
+}
+.box4{
+    background-color:brown;
+    grid-area: four;
+    min-height: 200px;
+}
+.box5{
+    background-color:burlywood;
+    grid-area: five;
+    padding: 20px;
+}
+.box6{
+    background-color:lightcoral;
+    grid-area: six;
+    padding: 20px;
+}
+.box7{
+    background-color:coral;
+    grid-area: seven;
+    padding: 20px;
+}
+h1{
+    font-size: 25px;
+ }
+
+/* ----------------- MEDIA QUERY -------------------- */
+
+/* ------------------------ MOBILE VIEW ---------------------------- */
+@media only screen and (min-width: 300px) and (max-width: 600px){
+        .container{
+            grid-template-areas: 'first' 'second' 'third' 'four' 'seven' 'five' 'six' ;
+            
+        }
+        .box3{
+            min-height: 150px;
+        }
+        .box4{
+            min-height: 150px;
+        }
+        .box5{
+        padding: 30px;
+        }
+         .box6{
+        padding: 30px;
+        }
+         .box7{
+        padding: 30px;
+        }
+}
+
+
+/* --------------------- TABLET ------------------------------ */
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+       .container{
+            grid-template-areas: 'first first first first'
+             'third third third third' 
+             'second four four four' 
+             'second seven seven seven' 
+             'second five five six';
+        } 
+        .box3{
+            min-height: 250px;
+        }
+        .box2{
+            padding: unset;
+        }
+}

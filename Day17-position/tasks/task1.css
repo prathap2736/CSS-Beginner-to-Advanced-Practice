@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, rgb(16 28 177), #8BC34A);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first {
+    background-color: chartreuse;
+    padding: 10px;
+}
+
+.box {
+    min-height: 450px;
+    width: 600px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+
+
+}
+
+.box1 {
+    min-height: 400px;
+    width: 300px;
+    /* background-color: red; */
+    right: 80px;
+    flex-direction: column;
+    display: flex;
+    box-shadow: 10px 10px 15px rgb(188, 205, 210);
+    margin-left: -100px;
+
+}
+
+.box2 {
+    min-height: 400px;
+    width: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    position: relative;
+    /* right: 70px */
+}
+
+.icon {
+    display: flex;
+    justify-content: space-between;
+    /* color: aliceblue */
+    color: aliceblue
+}
+
+.image {
+    /* box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2 */
+    position: relative;
+    right: 90px;
+    height: 250px;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.sets {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    background-color: aliceblue;
+
+}
+
+p {
+    opacity: 0.5
+}
+
+.type {
+    height: 60px;
+    width: 60px
+}
+
+.con {
+    border: 1px solid black;
+}
+
+.setsbox {
+    display: flex;
+    gap: 10px
+}
+
+.conbox1 {
+    border: 1px solid grey;
+}
+
+.colortype {
+    height: 40px;
+    width: 50px;
+
+}
+
+button {
+    padding: 20px;
+    background-color: #2aa58e;
+    ;
+    color: aliceblue;
+    border-radius: 10px;
+    border: none;
+    width: 200px
+}
+
+span {
+    font-size: 50px;
+    color: #E91E63;
+}
+
+.ben {
+    line-height: 20px;
+    padding-left: 20px;
+}
+
+
+/* ----------mobile----------------------- */
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+        height: unset
+    }
+
+    .box {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+    }
+
+    .box1 {
+        margin: unset;
+        width: 100%;
+    }
+
+    .box1 {
+        left: 5px;
+        bottom: 100px;
+    }
+
+    .box2 {
+        left: 5px;
+        right: unset;
+        width: 100%;
+    }
+
+    .icon {
+        visibility: hidden;
+    }
+    /* .con{
+        width:21%
+    } */
+
+    .image {
+        margin-left: 0px;
+        
+        right: 0px;
+        
+
+    }
+    .first{
+       display: flex;
+       justify-content: center;
+       align-items: center; 
+    }
+   
+}

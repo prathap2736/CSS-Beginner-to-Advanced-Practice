@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+}
+.box{
+    height: 200px;
+    width: 245px;
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.first{
+    display: flex;
+    gap: 10px;
+}
+.box1{
+    height: 460px;
+    width: 325px;
+    /* padding: 15px; */
+    background-image: linear-gradient(to right top, rgb(182, 70, 70), rgb(23, 179, 23));
+    color: white;
+}
+.image{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+.f2{
+    height: 50%
+}
+.f1{
+    margin-top: 15px;
+}
+.box2, .box3, .box4, .box5{
+    background-color: white;
+}
+.box11{
+    display: flex; 
+}
+.box2>p, .box3>p, .box4>p, .box5>p{
+    margin-top: 10px;
+}
+i{
+    margin-right: 5px;
+}
+body>h2{
+    text-align: center;
+    margin-bottom:20px; 
+}
+body{
+    padding: 20px;
+}
+
+.box2:hover, .box3:hover, .box4:hover, .box5:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right top, blue, black);
+    text-shadow: 5px 2px 5px #46a19d, 3px 4px 5px #aa4646, 2px 5px 5px #188d3f;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+}
+
+
+/* ----------------- MEDIA QUERY ---------------- */
+
+/* ----------------------- MOBILE VIEW ------------------------ */
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+        .container{
+            flex-direction: column;
+            /* width: 100%; */
+        }
+        .first{
+            flex-direction: column;
+            gap: unset;
+        }
+        .box{
+            width: 100%
+        }
+}
+
+/* ------------------------------ TAB VIEW -------------------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .container{
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .box1{
+        display: flex;
+        height: unset;
+        justify-content: space-between;
+    }
+    .box{
+        width: 100%
+    }
+    .image{
+        width: 50%;
+        height: unset;
+    }
+    .box2, .box3, .box4, .box5{
+        width: 100%;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .A{
+        display: flex;
+        gap:10px;
+    }
+}

@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    background-color: lightblue;
+    display: grid;
+    grid-template-areas: 'first second third four';
+    min-height: 640px;
+    padding: 10px;
+}
+.image{
+    height: 297px;
+    width:100%;
+}
+.icons{
+    margin: 15px 0px;
+}
+.bottom{
+    margin: 30px 0px 0px 0px;
+    border-top: 1px solid black; 
+    padding: 5px;
+}
+button{
+    border: none;
+    padding: 8px 20px;
+    background-color:rgb(80, 230, 100);
+    float: right;
+    border-radius:3px;  
+}
+
+.box{
+    height: 500px;
+    min-width: 300px;
+    /* background-color: blueviolet; */
+    border: 2px solid black;
+}
+.container>.box3{
+    margin:0px 10px;
+}
+.container>.box1{
+    margin-right: 10px;
+}
+.box2>img{
+    margin-top: 19px;
+}
+.box4>img{
+    margin-top: 24px;    
+}
+.inside{
+    width: 100%;
+    padding: 8px;
+}
+
+.box1{
+    background-color: lightcoral;
+    grid-area: first;
+}
+.box2{
+    background-color:blueviolet;
+    grid-area: second;
+}
+.box4{
+    background-color: rgb(255, 150, 100);
+    grid-area: third;
+}
+.box4{
+    background-color: rgb(100, 255, 180);
+    grid-area: four;
+}
+
+
+/* -------------------MEDIA QUERY--------------------- */
+
+/* ------------------------- MOBILE VIEW ----------------------------- */
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .container{
+        grid-template-areas: 'first''second''third''four';
+    }
+    .container>.box3{
+        margin:10px 0px;
+        /* grid-column */
+    }
+    .container>.box1{
+        margin: 0px 0px 10px 0px;
+    }
+
+}
+
+/* ---------------------------- TABLET VIEW ---------------------------------- */
+
+@media only screen and (min-width: 600px) and (max-width: 1250px){
+    .container{
+        grid-template-areas: 'first second''third four';
+    }
+    .container>.box3{
+            margin: 0px 10px 0px 0px;
+    }
+    .container>.box1{
+        margin: 0px 10px 10px 0px;
+    }
+
+}
+
+/* -------------------------------- DESKTOP VIEW --------------------------------- */
+
+@media only screen and (min-width: 1030px) and (max-width: 1250px){
+    .container{
+        grid-template-areas: 'first second''third four';
+    }
+    .container>.box3{
+            margin: 0px 10px 0px 0px;
+    }
+    .container>.box1{
+        margin: 0px 10px 10px 0px;
+    }
+    .image{
+        height:315px;
+    }
+
+}

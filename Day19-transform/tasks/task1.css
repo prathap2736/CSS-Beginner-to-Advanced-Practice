@@ -1,0 +1,271 @@
+* {
+    box-sizing: border;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    background-image: linear-gradient(to top right, blue, black);
+    padding: 20px;
+}
+
+.overall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    min-height: 640px;
+
+}
+
+.box {
+    display: flex;
+    /* flex-direction: column; */
+    margin-bottom: 20px;
+}
+
+.box {
+    height: 230px;
+    width: 500px;
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 0px black;
+    /* flex-wrap: wrap; */
+}
+
+.image {
+    width: 200px;
+    height: 100%;
+    border-right: 10px double red;
+}
+
+.image>img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.content {
+    text-align: center;
+    width: 300px;
+    /* height: 100%; */
+    padding: 20px 10px 10px 10px;
+}
+
+h1+p {
+    font-size: 12px;
+}
+
+button {
+    padding: 6px 0px;
+    width: 120px;
+    margin: 0px 5px 15px 0px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.container>h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.para {
+    margin: 10px 0px 20px 0px;
+}
+
+.btn1 {
+    background-color: rgb(0, 132, 255);
+    color: white;
+}
+
+.btn2 {
+    background-color: rgb(2, 2, 5);
+    color: white;
+}
+
+.btn3 {
+    background-color: rgb(228, 157, 26);
+    color: white;
+}
+
+.btn4 {
+    background-color: blue;
+    color: white;
+}
+
+.firsttwobox {
+    display: flex;
+    gap: 40px;
+    /* width: 100%; */
+    /* flex-wrap: wrap; */
+}
+
+/* ------------------------------  MEDIA QUERY ------------------------------------------ */
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    .box {
+        min-height: 400px;
+
+    }
+
+    .content {
+        padding: 80px 0px 20px 0px;
+    }
+
+    .para {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .image {
+        width: 200px;
+    }
+
+    .content {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 1060px) and (max-width: 1200px) {
+    .box {
+        min-height: 400px;
+        min-width: 400px;
+    }
+
+    .content {
+        padding: 40px 40px 20px 40px;
+    }
+
+    .para {
+        margin: 20px 0px 40px 0px;
+    }
+
+    .image {
+        width: 200px;
+    }
+
+    .content {
+        width: 200px;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width:1060px) {
+    .firsttwobox {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        height: 60%
+    }
+
+    .content {
+        width: 85%;
+        padding: 20px 30px 10px 30px;
+    }
+
+    .image {
+        border-right: none;
+        border-bottom: 10px double blue;
+    }
+
+    .box {
+        min-height: 610px;
+        width: 50%;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:900px) {
+    .firsttwobox {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .box {
+        min-height: 400px;
+    }
+
+    .content {
+        padding: 88px 20px 33px 20px;
+    }
+}
+
+@media only screen and (min-width:550px) and (max-width:800px) {
+    .firsttwobox {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .image {
+        width: 100%;
+        height: 60%;
+        border-right: none;
+        border-bottom: 10px double rgb(236, 5, 5);
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px 0px 10px 0px;
+    }
+
+    .box {
+        min-height: 610px;
+        min-width: 50%;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width:550px) {
+
+
+    .firsttwobox {
+        /* min-width: 100%; */
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .overall {
+        align-items: unset;
+    }
+
+    .image {
+        width: 100%;
+        border: none;
+        /* padding: 20px */
+    }
+
+    .box {
+        position: relative;
+        width: 100%;
+        height: 400px;
+
+    }
+
+
+    .content {
+        position: absolute;
+        bottom: 3%;
+        font-size: 14px;
+        width: 92%;
+        background-color: black;
+        color: aliceblue;
+        opacity: 0.7;
+        border-radius: 15px;
+        padding: 20px 0px 20px 19px;
+        margin: 0px 10px;
+    }
+
+    img {
+        background-color: black;
+    } 
+    .btn2{
+        background-color: blueviolet;
+    }
+}

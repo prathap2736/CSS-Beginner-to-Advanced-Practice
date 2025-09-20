@@ -1,0 +1,119 @@
+* {
+    box-sizing:border-box;
+    padding:0px;
+    margin:0px;
+}
+.first{
+    height:640px;
+    width:100%;
+    background-color: lightblue;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.f1{
+    height:450px;
+    width:1200px;
+    background-color:lightcoral; 
+    padding:50px;  
+    border-radius:10px;
+}
+.f2{
+    text-align:center;
+    margin-bottom:20px;
+}
+.twobox{
+    display: flex;
+    justify-content: space-between;
+    /* width:100%;  */
+    /* height:400px; */
+    /* background-color:yellow; */
+}
+.second{
+    height:280px;
+    width:500px;
+    background-color:lightgrey;
+    padding:15px;
+    border-radius:10px;
+}
+/* .second1{
+    margin-top:20px
+} */
+.two{
+    display: flex;
+    width:478px;
+    justify-content: space-between;
+    padding:0px 10px;
+}
+table,td{
+    /* border-collapse:collapse;
+    border:1px solid black; */
+    padding:10px;
+}
+table{
+    margin-top:15px;
+}
+.second .ss{
+    display: flex;
+    justify-content: space-between;
+    margin:0px 0px 10px 0px;
+}
+
+.s2{
+    width:150px;
+    height:180px;
+    /* background-color:red; */
+    text-align:center;
+    padding:5px;
+    font-size:30px;
+}
+.s2 h5{
+    font-size:60px;
+}
+.s2 p{
+    margin:8px 0px;
+}
+sup{
+    font-size:15px;
+}
+.s2 button{
+    padding:15px 30px;
+    background-color:blue;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+.s1>p{
+    font-size:20px;
+}
+.s1>button{
+    padding:5px 10px;
+    background-color:rosybrown;
+    border:none;
+    border-radius:5px;
+}
+i{
+    color:green;
+}
+
+/* -------------------media quary------------------- */
+/* --------mobile--------- */
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .twobox{
+            flex-direction:column;
+            /* height:100%; */
+            /* width:300px; */
+      }
+      /* .second{
+        height:300px;
+        width:100%;
+        padding:10px;
+      } */
+}
+
+/* -----------tab-------------- */
+/* @media only screen and (min-width:600px) and (max-width:800px){
+    .first{
+        background-color:yellow;
+    }
+} */

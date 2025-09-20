@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    min-height: 654px;
+    background-image: linear-gradient(to right top, rgb(32, 28, 37), grey);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    min-height: 450px;
+    width: 300px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2),
+        0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid rgb(106 107 47);;
+}
+
+
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fa-lg {
+    /* border: 2px solid yellow; */
+    padding: 15px 0px 0px 2px;
+    border-radius: 50%;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    background-image: linear-gradient(to left top, rgb(21, 245, 17), rgb(158, 52, 52));
+    color: white;
+}
+
+
+/* --------------------- MEDIA QUERY ------------------------- */
+/* ----------------------- TABLET VIEW --------------------------------- */
+
+@media only screen and (min-width:600px) and (max-width:800px) {
+
+    .container {
+        background-image: linear-gradient(to left top, rgb(159, 202, 40), rgb(52, 238, 46));
+    }
+
+    .fa-lg {
+        background-image: linear-gradient(to left bottom, rgb(137, 40, 202), rgb(226, 34, 34));
+    }
+
+    img {
+        border: 3px solid rgb(86, 202, 40);
+    }
+
+}
+/* ------------------------ MOBILE VIEW ------------------------------ */
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+
+    .container {
+        background-image: linear-gradient(to right bottom, rgb(172, 13, 119), rgb(28, 70, 80));
+    }
+
+    .fa-lg {
+        background-image: linear-gradient(to right top, rgb(1, 6, 17), rgb(126, 25, 50));
+    }
+
+    img {
+        border: 3px solid rgb(202, 32, 151);
+    }
+
+}
